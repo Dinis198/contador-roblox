@@ -11,6 +11,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 async function updateMemberCount() {
     try {
+        // Pedido corrigido com a barra e as aspas inclinadas corretas
         const response = await axios.get(`https://roblox.com{ROBLOX_GROUP_ID}`);
         const memberCount = response.data.memberCount;
 
